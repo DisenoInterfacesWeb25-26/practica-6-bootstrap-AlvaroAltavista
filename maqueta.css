@@ -34,7 +34,7 @@ div {
 }
 
 /* Media queries para controlar el alto de las columnas */
-@media screen and (width > 1200px) {
+@media screen and (width >= 992px) {
 	.rojo {
 		height: 200px;
 	}
