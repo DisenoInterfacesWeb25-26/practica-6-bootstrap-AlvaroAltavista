@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contacto</title>
+		<title>Tabla</title>
 
 		<link href="../css/bootstrap.min.css" rel="stylesheet" />
 		<link href="../estilos.css" rel="stylesheet" />
@@ -54,66 +54,55 @@
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb px-5 py-2 m-0">
 				<li class="breadcrumb-item" aria-current="page"><a href="../index.html">Inicio</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Contacto</li>
+				<li class="breadcrumb-item active" aria-current="page">Tabla</li>
 			</ol>
 		</nav>
 
 		<!-- Sección Principal -->
 		<section id="main">
-			<div class="container-fluid">
-				<div class="row px-5">
+			<div class="container-fluid px-5">
+				<div class="row">
 					<div class="col-12">
-						<h1 class="text-center">Formulario de Contacto</h1>
-					</div>
-					<div class="col-12">
-						<p class="text-center">Formulario de contacto para que nos envíes tus dudas y preguntas.</p>
+						<h1 class="text-center">Tabla</h1>
 					</div>
 				</div>
-				<div class="row px-5">
-					<div class="col-12 bg-body-secondary rounded p-5 mb-4">
-						<form>
-							<div class="mb-3">
-								<label for="nombre" class="form-label">Nombre:</label>
-								<input type="text" class="form-control" id="nombre" />
-							</div>
-							<div class="mb-3">
-								<label for="email" class="form-label">Correo electrónico:</label>
-								<input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
-								<div id="emailHelp" class="form-text">Nunca compartiremos los datos de tu correo electrónico.</div>
-							</div>
-							<div class="mb-3">
-								<label for="mensaje" class="form-label">Mensaje:</label>
-								<textarea class="form-control" id="mensaje"></textarea>
-							</div>
-							<div class="mb-3 form-check">
-								<input type="checkbox" class="form-check-input" id="exampleCheck1" />
-								<label class="form-check-label" for="exampleCheck1">Acepto las condiciones</label>
-							</div>
-							<button type="submit" class="btn btn-primary px-4">Enviar</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<!-- Componente de paginación -->
-			<div class="row px-5">
-				<div class="col-12">
-					<nav aria-label="Page navigation example">
-						<ul class="pagination justify-content-center">
-							<li class="page-item">
-								<a class="page-link" href="#" aria-label="Previous">
-									<span aria-hidden="true">&laquo;</span>
-								</a>
-							</li>
-							<li class="page-item"><a class="page-link" href="#">1</a></li>
-							<li class="page-item"><a class="page-link" href="#">2</a></li>
-							<li class="page-item"><a class="page-link" href="#">3</a></li>
-							<li class="page-item">
-								<a class="page-link" href="#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
+				<div class="row">
+					<table class="table table-bordered border-primary table-striped table-responsive">
+						<thead>
+							<tr class="table-dark">
+								<th scope="col">ID</th>
+								<th scope="col">Nombre</th>
+								<th scope="col">Apellido</th>
+								<th scope="col">Cargo</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">001</th>
+								<td>Álvaro</td>
+								<td>Felipe</td>
+								<td>Alumno</td>
+							</tr>
+							<tr>
+								<th scope="row">002</th>
+								<td>Alberto</td>
+								<td>Fuentes</td>
+								<td>Profesor</td>
+							</tr>
+							<tr>
+								<th scope="row">003</th>
+								<td>Elisa</td>
+								<td>Noguera</td>
+								<td>Profesor</td>
+							</tr>
+							<tr>
+								<th scope="row">004</th>
+								<td>Alejandro</td>
+								<td>Pérez</td>
+								<td>Alumno</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</section>
